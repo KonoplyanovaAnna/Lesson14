@@ -25,5 +25,14 @@ begin
     result := 365;
 end;
 
+function DaysInYearRange(y1,y2:integer): integer;
+begin
+  for var i := 1 to y2 do
+  begin
+    result += y1;
+    y1 += 1;
+  end;
+end;
+
 begin
 end.
